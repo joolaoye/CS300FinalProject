@@ -1,0 +1,8 @@
+--resource
+C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/.rcc/qmake_CS300FinalTask.qrc
+--resource
+C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/.rcc/appCS300FinalTask_raw_qml_0.qrc
+/CS300FinalTask/Main.qml
+/CS300FinalTask/landingPage.qml
+/CS300FinalTask/enterNumberPage.qml
+/CS300FinalTask/surprisePage.qml

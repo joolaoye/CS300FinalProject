@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="/CS300FinalTask/">
+    <file alias="Main.qml">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/Main.qml</file>
+    <file alias="landingPage.qml">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/landingPage.qml</file>
+    <file alias="enterNumberPage.qml">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/enterNumberPage.qml</file>
+    <file alias="surprisePage.qml">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/surprisePage.qml</file>
+    <file alias="ui/assets/arrow-20-24.png">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-20-24.png</file>
+    <file alias="ui/assets/arrow-121-24.png">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-121-24.png</file>
+    <file alias="ui/assets/check-mark-24.png">C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/check-mark-24.png</file>
+  </qresource>
+</RCC>
+
