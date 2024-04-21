@@ -82,7 +82,7 @@ Rectangle {
                     text: userInput.placeholderText
 
                     font {
-                        pixelSize: 16
+                        pixelSize: 14
                         family: "Montserrat"
                     }
 
@@ -119,7 +119,7 @@ Rectangle {
                 anchors.fill: parent
                 onClicked: {
                     if ((inputBorder.isInputValid && logicClass.isNumber(userInput.text))) {
-                        logicClass.setOutput("Yes")
+                        logicClass.generateRandomMovie(userInput.text)
                         activityStack.push("surprisePage.qml")
                     }
 

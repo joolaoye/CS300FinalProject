@@ -35,7 +35,7 @@ Rectangle {
 
     Rectangle {
         id: heroSection
-        width: 200
+        width: 300
         height: 111
         color: "#333333"
         anchors {
@@ -62,7 +62,7 @@ Rectangle {
         Rectangle {
             id: outputBorder
             color: "#333333"
-            width: 200
+            width: 300
             height: 48
             radius: 8
 
@@ -79,7 +79,7 @@ Rectangle {
 
             TextInput {
                 id: output
-                width: 200
+                width: contentWidth
                 height: 40
                 readOnly: true
 
@@ -102,7 +102,7 @@ Rectangle {
                         text: logicClass.output;
 
                         font {
-                            pixelSize: 16
+                            pixelSize: 14
                             family: "Montserrat"
                         }
 

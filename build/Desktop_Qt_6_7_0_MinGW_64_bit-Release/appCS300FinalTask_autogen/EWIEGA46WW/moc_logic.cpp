@@ -40,10 +40,12 @@ constexpr auto qt_meta_stringdata_CLASSLogicENDCLASS = QtMocHelpers::stringData(
     "Logic",
     "outputChanged",
     "",
-    "callMe",
+    "generateRandomMovie",
     "isNumber",
-    "setOutput",
     "initialize",
+    "setOutput",
+    "randomizeMovie",
+    "std::vector<std::string>&",
     "output"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -57,33 +59,35 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSLogicENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
-       1,   53, // properties
+       6,   14, // methods
+       1,   64, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x06,    2 /* Public */,
+       1,    0,   50,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       3,    0,   45,    2, 0x0a,    3 /* Public */,
-       4,    1,   46,    2, 0x0a,    4 /* Public */,
-       5,    1,   49,    2, 0x0a,    6 /* Public */,
-       6,    0,   52,    2, 0x08,    8 /* Private */,
+       3,    1,   51,    2, 0x0a,    3 /* Public */,
+       4,    1,   54,    2, 0x0a,    5 /* Public */,
+       5,    0,   57,    2, 0x08,    7 /* Private */,
+       6,    1,   58,    2, 0x08,    8 /* Private */,
+       7,    1,   61,    2, 0x08,   10 /* Private */,
 
  // signals: parameters
     QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Bool, QMetaType::QString,    2,
     QMetaType::Void, QMetaType::QString,    2,
+    QMetaType::Bool, QMetaType::QString,    2,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,    2,
+    QMetaType::Void, 0x80000000 | 8,    2,
 
  // properties: name, type, flags
-       7, QMetaType::QString, 0x00015903, uint(0), 0,
+       9, QMetaType::QString, 0x00015903, uint(0), 0,
 
        0        // eod
 };
@@ -101,16 +105,20 @@ Q_CONSTINIT const QMetaObject Logic::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<Logic, std::true_type>,
         // method 'outputChanged'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'callMe'
+        // method 'generateRandomMovie'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
         // method 'isNumber'
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        // method 'initialize'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setOutput'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<QString, std::false_type>,
-        // method 'initialize'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        // method 'randomizeMovie'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<std::vector<std::string> &, std::false_type>
     >,
     nullptr
 } };
@@ -122,11 +130,12 @@ void Logic::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void 
         (void)_t;
         switch (_id) {
         case 0: _t->outputChanged(); break;
-        case 1: _t->callMe(); break;
+        case 1: _t->generateRandomMovie((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: { bool _r = _t->isNumber((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 3: _t->setOutput((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 4: _t->initialize(); break;
+        case 3: _t->initialize(); break;
+        case 4: _t->setOutput((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 5: _t->randomizeMovie((*reinterpret_cast< std::add_pointer_t<std::vector<std::string>&>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -178,13 +187,13 @@ int Logic::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {

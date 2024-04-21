@@ -18,12 +18,13 @@ public:
 signals:
     void outputChanged();
 public slots:
-    void callMe();
+    void generateRandomMovie( QString );
     bool isNumber( QString );
-    void setOutput( QString );
 
 private slots:
     void initialize();
+    void setOutput( QString );
+    void randomizeMovie( std::vector<std::string>& );
 
 private:
     QString placeholder;

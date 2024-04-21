@@ -32,7 +32,12 @@
                 "slots": [
                     {
                         "access": "public",
-                        "name": "callMe",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "generateRandomMovie",
                         "returnType": "void"
                     },
                     {
@@ -46,7 +51,12 @@
                         "returnType": "bool"
                     },
                     {
-                        "access": "public",
+                        "access": "private",
+                        "name": "initialize",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
                         "arguments": [
                             {
                                 "type": "QString"
@@ -57,7 +67,12 @@
                     },
                     {
                         "access": "private",
-                        "name": "initialize",
+                        "arguments": [
+                            {
+                                "type": "std::vector<std::string>&"
+                            }
+                        ],
+                        "name": "randomizeMovie",
                         "returnType": "void"
                     }
                 ],
