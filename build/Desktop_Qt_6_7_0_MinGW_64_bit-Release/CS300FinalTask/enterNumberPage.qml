@@ -118,9 +118,10 @@ Rectangle {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
+                    // Checks if input is not empty and empty is a number
                     if ((inputBorder.isInputValid && logicClass.isNumber(userInput.text))) {
-                        logicClass.generateRandomMovie(userInput.text)
-                        activityStack.push("surprisePage.qml")
+                        logicClass.generateRandomMovie(userInput.text) // Call function to generate new movie
+                        activityStack.push("surprisePage.qml") // Push the next screen to the stackview
                     }
 
                 }

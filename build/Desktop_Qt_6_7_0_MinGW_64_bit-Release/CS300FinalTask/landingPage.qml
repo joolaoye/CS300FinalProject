@@ -1,5 +1,6 @@
 import QtQuick
 
+// Landing page of the application
 Rectangle {
     id: landingPage
     color:"#333333"
@@ -49,6 +50,7 @@ Rectangle {
         }
 
 
+        // Start button navigates to the next screen
         Rectangle {
             id: startButton
             color: "#333333"
@@ -81,7 +83,7 @@ Rectangle {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: activityStack.push("enterNumberPage.qml")
+                onClicked: activityStack.push("enterNumberPage.qml") // Add the next screen to the stackview
             }
         }
     }

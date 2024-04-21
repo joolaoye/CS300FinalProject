@@ -1,10 +1,13 @@
 import QtQuick
 
+
+// The page to view the random movie
 Rectangle {
     id: surprisePage
     color: "#333333"
 
 
+    // Back button navigates to the previous page
     Rectangle {
         id: backButton
         width: 48
@@ -27,9 +30,10 @@ Rectangle {
             source: "ui/assets/arrow-121-24.png"
         }
 
+        // Click interaction
         MouseArea {
             anchors.fill: parent
-            onClicked: activityStack.pop()
+            onClicked: activityStack.pop() // Pop current screen from the stackview
         }
     }
 
@@ -59,6 +63,7 @@ Rectangle {
             text: "Surprise!!"
         }
 
+        // Output container
         Rectangle {
             id: outputBorder
             color: "#333333"
@@ -77,6 +82,7 @@ Rectangle {
                 left: parent.left
             }
 
+            // Edit text for output
             TextInput {
                 id: output
                 width: contentWidth
@@ -98,6 +104,7 @@ Rectangle {
                 color: "#FFFFFF"
                 focus: true
 
+                // Text label for output
                 Text {
                         text: logicClass.output;
 

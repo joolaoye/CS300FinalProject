@@ -7,6 +7,7 @@ Window {
     visible: true
     title: qsTr("Fantasy Movie")
 
+    // Keeps track of multiple screens
     StackView {
         id: activityStack
         anchors.fill: parent

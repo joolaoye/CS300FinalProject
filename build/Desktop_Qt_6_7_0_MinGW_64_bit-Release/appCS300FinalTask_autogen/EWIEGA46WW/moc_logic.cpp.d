@@ -3,7 +3,6 @@ C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64
   C:/Qt/6.7.0/mingw_64/include/QtCore/QByteArray \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QCryptographicHash \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QDeadlineTimer \
-  C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QFlags \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QHash \
   C:/Qt/6.7.0/mingw_64/include/QtCore/QIODevice \

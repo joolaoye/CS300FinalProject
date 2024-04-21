@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-    Logic Backend;
+    Logic Backend; // Create an instance of the logic class
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/CS300FinalTask/Main.qml"));
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
         Qt::QueuedConnection);
     engine.load(url);
 
+    // Give it an id 'logicClass' and make it available across the project
     QQmlContext* rootContext = engine.rootContext();
     rootContext->setContextProperty("logicClass", &Backend);
 

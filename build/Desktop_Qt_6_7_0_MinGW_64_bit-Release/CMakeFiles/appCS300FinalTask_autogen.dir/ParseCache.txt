@@ -5,7 +5,6 @@ C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/logic.h
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QByteArray
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QCryptographicHash
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QDeadlineTimer
- mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QDebug
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QFlags
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QHash
  mdp:C:/Qt/6.7.0/mingw_64/include/QtCore/QIODevice

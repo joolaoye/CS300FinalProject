@@ -1060,15 +1060,15 @@
 			"id" : "appCS300FinalTask_qmlimportscan::@6890427a1f51a3e7e1df"
 		},
 		{
-			"backtrace" : 77,
-			"id" : "appCS300FinalTask_tooling::@6890427a1f51a3e7e1df"
-		},
-		{
 			"id" : "appCS300FinalTask_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
 			"id" : "appCS300FinalTask_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 77,
+			"id" : "appCS300FinalTask_tooling::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "appCS300FinalTask::@6890427a1f51a3e7e1df",
