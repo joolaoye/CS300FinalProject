@@ -22,7 +22,7 @@ qt_add_qml_module(appCS300FinalTask
         RESOURCES ui/assets/arrow-20-24.png ui/assets/arrow-121-24.png ui/assets/check-mark-24.png
         QML_FILES surprisePage.qml
         SOURCES logic.h logic.cpp
-        RESOURCES movies
+        RESOURCES
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

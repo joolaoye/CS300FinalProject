@@ -208,7 +208,7 @@ build all_qmllint_module: phony appCS300FinalTask_qmllint_module
 #############################################
 # Utility command for appCS300FinalTask_tooling
 
-build appCS300FinalTask_tooling: phony CS300FinalTask/Main.qml CS300FinalTask/landingPage.qml CS300FinalTask/enterNumberPage.qml CS300FinalTask/surprisePage.qml CS300FinalTask/ui/assets/arrow-20-24.png CS300FinalTask/ui/assets/arrow-121-24.png CS300FinalTask/ui/assets/check-mark-24.png CS300FinalTask/movies
+build appCS300FinalTask_tooling: phony CS300FinalTask/Main.qml CS300FinalTask/landingPage.qml CS300FinalTask/enterNumberPage.qml CS300FinalTask/surprisePage.qml CS300FinalTask/ui/assets/arrow-20-24.png CS300FinalTask/ui/assets/arrow-121-24.png CS300FinalTask/ui/assets/check-mark-24.png
 
 
 #############################################
@@ -370,7 +370,7 @@ build .rcc/qmlcache/appCS300FinalTask_surprisePage_qml.cpp | ${cmake_ninja_workd
 #############################################
 # Custom command for .rcc\qrc_appCS300FinalTask_raw_qml_0.cpp
 
-build .rcc/qrc_appCS300FinalTask_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appCS300FinalTask_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/Main.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/landingPage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/enterNumberPage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/surprisePage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-20-24.png C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-121-24.png C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/check-mark-24.png C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/movies .rcc/appCS300FinalTask_raw_qml_0.qrc C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || appCS300FinalTask_autogen appCS300FinalTask_autogen_timestamp_deps appCS300FinalTask_qmlimportscan appCS300FinalTask_tooling
+build .rcc/qrc_appCS300FinalTask_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appCS300FinalTask_raw_qml_0.cpp: CUSTOM_COMMAND C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/Main.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/landingPage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/enterNumberPage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/surprisePage.qml C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-20-24.png C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/arrow-121-24.png C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/check-mark-24.png .rcc/appCS300FinalTask_raw_qml_0.qrc C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || appCS300FinalTask_autogen appCS300FinalTask_autogen_timestamp_deps appCS300FinalTask_qmlimportscan appCS300FinalTask_tooling
   COMMAND = cmd.exe /C "cd /D C:\Users\olaoy\OneDrive\Documents\CS300FinalTask\build\Desktop_Qt_6_7_0_MinGW_64_bit-Release && C:\Qt\6.7.0\mingw_64\.\bin\rcc.exe --output C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/.rcc/qrc_appCS300FinalTask_raw_qml_0.cpp --name appCS300FinalTask_raw_qml_0 C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/.rcc/appCS300FinalTask_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appCS300FinalTask_raw_qml_0
   restat = 1
@@ -482,15 +482,6 @@ build CS300FinalTask/ui/assets/arrow-121-24.png | ${cmake_ninja_workdir}CS300Fin
 build CS300FinalTask/ui/assets/check-mark-24.png | ${cmake_ninja_workdir}CS300FinalTask/ui/assets/check-mark-24.png: CUSTOM_COMMAND C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/check-mark-24.png
   COMMAND = cmd.exe /C "cd /D C:\Users\olaoy\OneDrive\Documents\CS300FinalTask && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/ui/assets/check-mark-24.png C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CS300FinalTask/ui/assets/check-mark-24.png"
   DESC = Copying ui/assets/check-mark-24.png to C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CS300FinalTask/ui/assets/check-mark-24.png
-  restat = 1
-
-
-#############################################
-# Custom command for CS300FinalTask\movies
-
-build CS300FinalTask/movies | ${cmake_ninja_workdir}CS300FinalTask/movies: CUSTOM_COMMAND C$:/Users/olaoy/OneDrive/Documents/CS300FinalTask/movies
-  COMMAND = cmd.exe /C "cd /D C:\Users\olaoy\OneDrive\Documents\CS300FinalTask && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/movies C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CS300FinalTask/movies"
-  DESC = Copying movies to C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CS300FinalTask/movies
   restat = 1
 
 
