@@ -78,6 +78,11 @@ Rectangle {
                 color: "#FFFFFF"
                 text: "Start"
             }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: activityStack.push("enterNumberPage.qml")
+            }
         }
     }
 }

@@ -26,6 +26,11 @@ Rectangle {
             }
             source: "ui/assets/arrow-121-24.png"
         }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: activityStack.pop()
+        }
     }
 
     Rectangle {
@@ -76,6 +81,7 @@ Rectangle {
                 id: output
                 width: 200
                 height: 40
+                readOnly: true
 
                 anchors {
                     top: outputBorder.top
@@ -83,8 +89,6 @@ Rectangle {
                     left: outputBorder.left
                     leftMargin: 8
                 }
-
-                property string placeholderText: "Jupiter Ascending"
 
                 font {
                     pixelSize: 16
@@ -95,7 +99,7 @@ Rectangle {
                 focus: true
 
                 Text {
-                        text: output.placeholderText
+                        text: logicClass.output;
 
                         font {
                             pixelSize: 16
@@ -103,10 +107,9 @@ Rectangle {
                         }
 
                         color: "#FFFFFF"
-                        visible: !output.text && !output.activeFocus
+                        visible: true
                     }
             }
         }
-
     }
 }

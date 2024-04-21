@@ -6,29 +6,6 @@ Rectangle {
 
 
     Rectangle {
-        id: forwardButton
-        width: 48
-        height: 48
-        color: "#333333"
-        anchors {
-            top: parent.top
-            right: parent.right
-            topMargin: 16
-            rightMargin: 16
-        }
-
-        Image {
-            width: 24
-            height: 24
-            anchors {
-                horizontalCenter: forwardButton.horizontalCenter
-                verticalCenter: forwardButton.verticalCenter
-            }
-            source: "ui/assets/arrow-20-24.png"
-        }
-    }
-
-    Rectangle {
         id: heroSection
         width: 211
         height: 111
@@ -60,6 +37,8 @@ Rectangle {
             width: 140
             height: 48
             radius: 8
+
+            property bool isInputValid: false // Track if input is valid
 
             border {
                 width: 1
@@ -94,17 +73,22 @@ Rectangle {
                 color: "#FFFFFF"
                 focus: true
 
+                onTextChanged: {
+                    // Update the property to reflect whether there is input
+                    inputBorder.isInputValid = userInput.text.trim() !== ""
+                }
+
                 Text {
-                        text: userInput.placeholderText
+                    text: userInput.placeholderText
 
-                        font {
-                            pixelSize: 16
-                            family: "Montserrat"
-                        }
-
-                        color: "#FFFFFF"
-                        visible: !userInput.text && !userInput.activeFocus
+                    font {
+                        pixelSize: 16
+                        family: "Montserrat"
                     }
+
+                    color: "#FFFFFF"
+                    visible: !userInput.text && !userInput.activeFocus
+                }
             }
         }
 
@@ -113,7 +97,8 @@ Rectangle {
             width: 48
             height: 48
             radius: 8
-            color: "#1B7E25"
+            color: (inputBorder.isInputValid && logicClass.isNumber(userInput.text)) ? "#1B7E25" : "#666666" // Change color based on input validity
+            opacity:(inputBorder.isInputValid && logicClass.isNumber(userInput.text)) ? 1 : 0.5 // Change opacity based on input validity
             anchors {
                 top: prompt.bottom
                 topMargin: 16
@@ -129,6 +114,18 @@ Rectangle {
                 }
                 source: "ui/assets/check-mark-24.png"
             }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if ((inputBorder.isInputValid && logicClass.isNumber(userInput.text))) {
+                        logicClass.setOutput("Yes")
+                        activityStack.push("surprisePage.qml")
+                    }
+
+                }
+            }
         }
+
     }
 }

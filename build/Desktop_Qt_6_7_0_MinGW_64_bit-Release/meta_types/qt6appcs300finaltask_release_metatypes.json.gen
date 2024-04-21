@@ -1,2 +1,75 @@
 [
+    {
+        "classes": [
+            {
+                "className": "Logic",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "output",
+                        "notify": "outputChanged",
+                        "read": "output",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setOutput"
+                    }
+                ],
+                "qualifiedClassName": "Logic",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "outputChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "callMe",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "isNumber",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QString"
+                            }
+                        ],
+                        "name": "setOutput",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "name": "initialize",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "logic.h",
+        "outputRevision": 68
+    }
 ]

@@ -696,7 +696,15 @@
 	"CMAKE_SOURCE_DIR" : "C:/Users/olaoy/OneDrive/Documents/CS300FinalTask",
 	"DEP_FILE" : "C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/appCS300FinalTask_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appCS300FinalTask_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/logic.h",
+			"MU",
+			"EWIEGA46WW/moc_logic.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/appCS300FinalTask_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/appCS300FinalTask_autogen/mocs_compilation.cpp",
@@ -797,6 +805,11 @@
 	"SETTINGS_FILE" : "C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/build/Desktop_Qt_6_7_0_MinGW_64_bit-Release/CMakeFiles/appCS300FinalTask_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/logic.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/olaoy/OneDrive/Documents/CS300FinalTask/main.cpp",
 			"MU",
